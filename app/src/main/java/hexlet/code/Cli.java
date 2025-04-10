@@ -7,6 +7,10 @@ public class Cli {
         System.out.println("May I have your name?");
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
+        if (name.equals("") && name.equals(" ")) {
+            System.out.println("You didn't enter your name. Let's try again!");
+            return getByName();
+        }
         System.out.println("Hello, " + name + "!");
         return name;
     }

@@ -1,3 +1,4 @@
+[![SonarQube](https://github.com/nastya-ermolaeva/java-project-61/actions/workflows/build.yml/badge.svg)](https://github.com/nastya-ermolaeva/java-project-61/actions/workflows/build.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nastya-ermolaeva_java-project-61&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=nastya-ermolaeva_java-project-61)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=nastya-ermolaeva_java-project-61&metric=bugs)](https://sonarcloud.io/summary/new_code?id=nastya-ermolaeva_java-project-61)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=nastya-ermolaeva_java-project-61&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=nastya-ermolaeva_java-project-61)

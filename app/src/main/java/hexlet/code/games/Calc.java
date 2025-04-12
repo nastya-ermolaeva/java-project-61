@@ -11,7 +11,7 @@ public class Calc {
         String[][] questionsAndAnswers = new String[rows][columns];
 
         for (int i = 0; i < rows; i++) {
-            int number1 = (int) (Math.random() * 21);
+            int number1 = (int) (Math.random() * 100);
             int number2 = (int) (Math.random() * 21);
             int operation = (int) (Math.random() * 3);
 

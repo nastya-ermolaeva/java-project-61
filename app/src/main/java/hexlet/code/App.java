@@ -1,4 +1,7 @@
 package hexlet.code;
+
+import hexlet.code.games.Greet;
+import hexlet.code.games.Even;
 import java.util.Scanner;
 
 public class App {
@@ -16,7 +19,6 @@ public class App {
                 Greet.getByName();
                 break;
             case "2":
-                Greet.getByName();
                 Even.isNumberEven();
             case "0":
                 break;

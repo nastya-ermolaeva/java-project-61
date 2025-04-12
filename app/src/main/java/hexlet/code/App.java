@@ -22,12 +22,14 @@ public class App {
                 break;
             case "2":
                 Even.isNumberEven();
+                break;
             case "3":
                 Calc.calculate();
-            case "0":
                 break;
+            case "0":
+                return;
             default:
-                System.out.println("You entered an incorrect number. Let's try again!");
+                System.out.println("You entered an incorrect number.");
         }
     }
 }

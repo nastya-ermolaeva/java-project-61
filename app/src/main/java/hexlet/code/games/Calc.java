@@ -1,6 +1,7 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+import java.util.Random;
 
 public class Calc {
 
@@ -9,11 +10,12 @@ public class Calc {
         int rows = 3;
         int columns = 2;
         String[][] questionsAndAnswers = new String[rows][columns];
+        Random random = new Random();
 
         for (int i = 0; i < rows; i++) {
-            int number1 = (int) (Math.random() * 100);
-            int number2 = (int) (Math.random() * 21);
-            int operation = (int) (Math.random() * 3);
+            int number1 = random.nextInt(100);
+            int number2 = random.nextInt(21);
+            int operation = random.nextInt(3);
 
             switch (operation) {
                 case 0:

@@ -12,10 +12,12 @@ Brain Games is a collection of console-based mini-games inspired by popular brai
 # Games
 * Even – Determine if a number is even.
 * Calc – Calculator. Solve arithmetic expressions.
+* GCD - Find the greatest common divisor of two numbers.
 
 # Watch Demo
 [Even](https://asciinema.org/a/ZFSHd77vrzYNky2rxtWbbtBDi)
 [Calc](https://asciinema.org/a/pvkjzSuUIu4iOw50LqkURsD1V)
+[GCD](https://asciinema.org/a/Ee5qaQe8z35bCRFkxA6PSdlQj)
 
 # How to Run the Games
 ```

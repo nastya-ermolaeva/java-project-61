@@ -1,6 +1,7 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+import hexlet.code.Utils;
 
 public class GCD {
 
@@ -14,15 +15,8 @@ public class GCD {
             int number1 = (int) (Math.random() * 100) + 1;
             int number2 = (int) (Math.random() * 100) + 1;
             questionsAndAnswers[i][0] = number1 + " " + number2;
-
-            int a = number1;
-            int b = number2;
-            while (a != 0) {
-                int temp = a;
-                a = b % a;
-                b = temp;
-            }
-            questionsAndAnswers[i][1] = Integer.toString(b);
+            int correctAnswer = Utils.gcd(number1, number2);
+            questionsAndAnswers[i][1] = Integer.toString(correctAnswer);
         }
         Engine.playGame(rule, questionsAndAnswers);
     }

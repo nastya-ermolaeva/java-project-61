@@ -10,9 +10,10 @@ public class Progression {
         int rows = 3;
         int columns = 2;
         String[][] questionsAndAnswers = new String[rows][columns];
+        int numInProgression = 10;
 
         for (int i = 0; i < rows; i++) {
-            int[] progression = new int[10];
+            int[] progression = new int[numInProgression];
             String[] progressionInString = new String[progression.length];
 
             progression[0] = Utils.RANDOM.nextInt(30);

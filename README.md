@@ -17,11 +17,11 @@ Brain Games is a collection of console-based mini-games inspired by popular brai
 * Prime - Determine if a number is prime.
 
 # Watch Demo
-[Even](https://asciinema.org/a/ZFSHd77vrzYNky2rxtWbbtBDi)
-[Calc](https://asciinema.org/a/pvkjzSuUIu4iOw50LqkURsD1V)
-[GCD](https://asciinema.org/a/Ee5qaQe8z35bCRFkxA6PSdlQj)
-[Progression](https://asciinema.org/a/zkKdvFatjFAPLvxtd3dvRqjae)
-[Prime](https://asciinema.org/a/ig5j9hrIcnWK7VWr0y1ARZgd8)
+[Even](https://asciinema.org/a/WobE1Y5UaHKrgTPQquxfwXxsz)
+[Calc](https://asciinema.org/a/ij8ID6b6WIBVl1QrjfwhQHjKj)
+[GCD](https://asciinema.org/a/lYRkBZUYUuAUgiegjK7uD0UVa)
+[Progression](https://asciinema.org/a/O3s3e9e3gUkjfBVymGgpYvoKd)
+[Prime](https://asciinema.org/a/JR4TIVtyZVHEMAI1OdhF2KfqR)
 
 # How to Run the Games
 ```

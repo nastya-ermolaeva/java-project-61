@@ -3,15 +3,15 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Engine {
+    public static final int ROUNDS_COUNT = 3;
 
     public static void playGame(String rule, String[][] questionsAndAnswers) {
         Greet.getByName();
-        int maxAttempts = 3;
         int numOfCorrectAnswers = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.println(rule);
 
-        for (int i = 0; i < maxAttempts; i++) {
+        for (int i = 0; i < ROUNDS_COUNT; i++) {
             System.out.println("Question: " + questionsAndAnswers[i][0]);
             System.out.print("Your answer: ");
             String userAnswer = scanner.nextLine().trim();
@@ -29,7 +29,7 @@ public class Engine {
             }
         }
 
-        if (numOfCorrectAnswers == maxAttempts) {
+        if (numOfCorrectAnswers == ROUNDS_COUNT) {
             System.out.println("Congratulations, " + Greet.getName() + "!");
         }
     }

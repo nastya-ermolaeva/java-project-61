@@ -4,22 +4,20 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 
 public class Progression {
+    private static final int PROGRESSION_LENGTH = 10;
+    private static final int MAX_NUMBER = 30;
+    private static final int MAX_DIFF = 19;
 
     public static void runGame() {
         String rule = "What number is missing in the progression?";
-        int rows = 3;
-        int columns = 2;
-        String[][] questionsAndAnswers = new String[rows][columns];
-        int numInProgression = 10;
-        int maxRandomNumber = 30;
-        int maxDiff = 19;
+        String[][] questionsAndAnswers = new String[Engine.ROUNDS_COUNT][2];
 
-        for (int i = 0; i < rows; i++) {
-            int[] progression = new int[numInProgression];
+        for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
+            int[] progression = new int[PROGRESSION_LENGTH];
             String[] progressionInString = new String[progression.length];
 
-            progression[0] = Utils.RANDOM.nextInt(maxRandomNumber);
-            int diff = Utils.RANDOM.nextInt(maxDiff) + 1;
+            progression[0] = Utils.RANDOM.nextInt(MAX_NUMBER);
+            int diff = Utils.RANDOM.nextInt(MAX_DIFF) + 1;
 
             for (int j = 1; j < progression.length; j++) {
                 progression[j] = progression[j - 1] + diff;
@@ -29,7 +27,7 @@ public class Progression {
                 progressionInString[j] = Integer.toString(progression[j]);
             }
 
-            int missingNumber = Utils.RANDOM.nextInt(numInProgression);
+            int missingNumber = Utils.RANDOM.nextInt(PROGRESSION_LENGTH);
             questionsAndAnswers[i][1] = progressionInString[missingNumber];
             progressionInString[missingNumber] = "..";
             questionsAndAnswers[i][0] = String.join(" ", progressionInString);

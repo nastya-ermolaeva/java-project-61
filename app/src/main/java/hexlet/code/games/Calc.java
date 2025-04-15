@@ -4,20 +4,19 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 
 public class Calc {
+    private static final int MAX_NUMBER1 = 100;
+    private static final int MAX_NUMBER2 = 21;
+    private static final int MAX_OPERATIONS = 3;
+
 
     public static void runGame() {
         String rule = "What is the result of the expression?";
-        int rows = 3;
-        int columns = 2;
-        String[][] questionsAndAnswers = new String[rows][columns];
-        int maxRandomNumber1 = 100;
-        int maxRandomNumber2 = 21;
-        int maxNumberForOperations = 3;
+        String[][] questionsAndAnswers = new String[Engine.ROUNDS_COUNT][2];
 
-        for (int i = 0; i < rows; i++) {
-            int number1 = Utils.RANDOM.nextInt(maxRandomNumber1);
-            int number2 = Utils.RANDOM.nextInt(maxRandomNumber2);
-            int operation = Utils.RANDOM.nextInt(maxNumberForOperations);
+        for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
+            int number1 = Utils.RANDOM.nextInt(MAX_NUMBER1);
+            int number2 = Utils.RANDOM.nextInt(MAX_NUMBER2);
+            int operation = Utils.RANDOM.nextInt(MAX_OPERATIONS);
 
             switch (operation) {
                 case 0:

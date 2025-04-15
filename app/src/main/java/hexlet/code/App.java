@@ -5,6 +5,7 @@ import hexlet.code.games.Even;
 import hexlet.code.games.Calc;
 import hexlet.code.games.GCD;
 import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 import java.util.Scanner;
 
 public class App {
@@ -15,6 +16,7 @@ public class App {
                + "\n3 - Calc"
                + "\n4 - GCD"
                + "\n5 - Progression"
+               + "\n6 - Prime"
                + "\n0 - Exit");
         System.out.print("Your choice: ");
         Scanner scanner = new Scanner(System.in);
@@ -25,16 +27,19 @@ public class App {
                 Greet.getByName();
                 break;
             case "2":
-                Even.isNumberEven();
+                Even.runGame();
                 break;
             case "3":
-                Calc.calculate();
+                Calc.runGame();
                 break;
             case "4":
-                GCD.findGCD();
+                GCD.runGame();
                 break;
             case "5":
-                Progression.findMissingNumber();
+                Progression.runGame();
+                break;
+            case "6":
+                Prime.runGame();
                 break;
             case "0":
                 return;

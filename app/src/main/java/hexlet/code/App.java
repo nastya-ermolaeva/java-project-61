@@ -4,6 +4,7 @@ import hexlet.code.games.Greet;
 import hexlet.code.games.Even;
 import hexlet.code.games.Calc;
 import hexlet.code.games.GCD;
+import hexlet.code.games.Progression;
 import java.util.Scanner;
 
 public class App {
@@ -13,6 +14,7 @@ public class App {
                + "\n2 - Even"
                + "\n3 - Calc"
                + "\n4 - GCD"
+               + "\n5 - Progression"
                + "\n0 - Exit");
         System.out.print("Your choice: ");
         Scanner scanner = new Scanner(System.in);
@@ -30,6 +32,9 @@ public class App {
                 break;
             case "4":
                 GCD.findGCD();
+                break;
+            case "5":
+                Progression.findMissingNumber();
                 break;
             case "0":
                 return;

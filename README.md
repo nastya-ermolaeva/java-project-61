@@ -13,11 +13,13 @@ Brain Games is a collection of console-based mini-games inspired by popular brai
 * Even – Determine if a number is even.
 * Calc – Calculator. Solve arithmetic expressions.
 * GCD - Find the greatest common divisor of two numbers.
+* Progression - Find the missing number in a sequence.
 
 # Watch Demo
 [Even](https://asciinema.org/a/ZFSHd77vrzYNky2rxtWbbtBDi)
 [Calc](https://asciinema.org/a/pvkjzSuUIu4iOw50LqkURsD1V)
 [GCD](https://asciinema.org/a/Ee5qaQe8z35bCRFkxA6PSdlQj)
+[Progression](https://asciinema.org/a/zkKdvFatjFAPLvxtd3dvRqjae)
 
 # How to Run the Games
 ```

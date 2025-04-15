@@ -5,7 +5,7 @@ import hexlet.code.Utils;
 
 public class Progression {
 
-    public static void findMissingNumber() {
+    public static void runGame() {
         String rule = "What number is missing in the progression?";
         int rows = 3;
         int columns = 2;

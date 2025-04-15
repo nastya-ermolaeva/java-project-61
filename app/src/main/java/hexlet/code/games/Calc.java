@@ -5,7 +5,7 @@ import hexlet.code.Utils;
 
 public class Calc {
 
-    public static void calculate() {
+    public static void runGame() {
         String rule = "What is the result of the expression?";
         int rows = 3;
         int columns = 2;

@@ -10,9 +10,10 @@ public class Prime {
         int rows = 3;
         int columns = 2;
         String[][] questionsAndAnswers = new String[rows][columns];
+        int maxRandomNumber = 1000;
 
         for (int i = 0; i < rows; i++) {
-            int randomNumber = Utils.RANDOM.nextInt(1000);
+            int randomNumber = Utils.RANDOM.nextInt(maxRandomNumber);
             questionsAndAnswers[i][0] = Integer.toString(randomNumber);
             questionsAndAnswers[i][1] = Utils.isPrime(randomNumber) ? "yes" : "no";
         }

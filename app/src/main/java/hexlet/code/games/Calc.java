@@ -10,11 +10,14 @@ public class Calc {
         int rows = 3;
         int columns = 2;
         String[][] questionsAndAnswers = new String[rows][columns];
+        int maxRandomNumber1 = 100;
+        int maxRandomNumber2 = 21;
+        int maxNumberForOperations = 3;
 
         for (int i = 0; i < rows; i++) {
-            int number1 = Utils.RANDOM.nextInt(100);
-            int number2 = Utils.RANDOM.nextInt(21);
-            int operation = Utils.RANDOM.nextInt(3);
+            int number1 = Utils.RANDOM.nextInt(maxRandomNumber1);
+            int number2 = Utils.RANDOM.nextInt(maxRandomNumber2);
+            int operation = Utils.RANDOM.nextInt(maxNumberForOperations);
 
             switch (operation) {
                 case 0:

@@ -10,7 +10,7 @@ public class Cli {
         String name = scanner.nextLine().trim();
 
         if (name.isEmpty()) {
-            System.out.println("You didn't enter your name.");
+            System.out.println("You didn't enter your name. Let's try again!");
         } else {
             System.out.println("Hello, " + name + "!");
         }

@@ -15,19 +15,19 @@ public class GCD {
             int number1 = Utils.getRandomNumberInRange(MIN_NUMBER, MAX_NUMBER);
             int number2 = Utils.getRandomNumberInRange(MIN_NUMBER, MAX_NUMBER);
             questionsAndAnswers[i][0] = number1 + " " + number2;
-            int a = number1;
-            int b = number2;
-
-            while (a != 0) {
-                int temp = a;
-                a = b % a;
-                b = temp;
-            }
-
-            int correctAnswer = b;
+            int correctAnswer = findGCD(number1, number2);
             questionsAndAnswers[i][1] = Integer.toString(correctAnswer);
         }
 
         Engine.playGame(RULE, questionsAndAnswers);
+    }
+
+    public static int findGCD(int a, int b) {
+        while (a != 0) {
+            int temp = a;
+            a = b % a;
+            b = temp;
+        }
+        return b;
     }
 }

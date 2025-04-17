@@ -23,7 +23,7 @@ public class App {
 
         switch (input) {
             case "1":
-                Greet.getByName();
+                Cli.getByName();
                 break;
             case "2":
                 Even.runGame();

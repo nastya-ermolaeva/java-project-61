@@ -24,12 +24,12 @@ public class Calc {
         Engine.playGame(RULE, questionsAndAnswers);
     }
 
-    public static int calculate(int number1, int number2, String operation) {
+    public static int calculate(int number1, int number2, String operation) throws IllegalArgumentException {
         return switch (operation) {
             case "+" -> number1 + number2;
             case "-" -> number1 - number2;
             case "*" -> number1 * number2;
-            default -> 0;
+            default -> throw new IllegalArgumentException("Unknown operation: '" + operation + "'!");
         };
     }
 }
